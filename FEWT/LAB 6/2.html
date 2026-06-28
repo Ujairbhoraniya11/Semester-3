@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printsepreter(){
+            document.write("<br>" + "######################################################## "  + "<br>");
+        }
+
+        let arr = []
+
+        arr.push(12)
+        arr.push(35)
+        arr.push(45)
+        arr.push(87)
+        arr.push(90)
+        document.write(arr);
+        
+        printsepreter()
+        document.write("Push Operation " + "<br>");
+        arr.push(100)
+        document.write(arr)
+        
+        
+        printsepreter()
+        document.write("Pop Operation " + "<br>");
+        arr.pop()
+        document.write(arr);
+        
+        printsepreter()
+        document.write("Shift Operation " + "<br>");
+        arr.shift()
+        document.write(arr)
+        
+        printsepreter()
+        document.write("Unshift Operation " + "<br>");
+        arr.unshift(12)
+        document.write(arr)
+        
+        printsepreter()
+        document.write("Splice Operation " + "<br>");
+        document.write("Splice  : " + arr.splice(2,1,200))
+        document.write(arr)
+        
+        printsepreter()
+        document.write("Slice Operation " + "<br>");
+        arr.slice(0,3)
+        document.write(arr)
+
+        // printsepreter()
+        // document.write("Sort Operation " + "<br>");
+        // arr.sort(0,3)
+        // document.write(arr)
+
+    </script>
+</body>
+</html>
