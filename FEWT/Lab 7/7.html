@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function currentTime() {
+            let now = new Date()
+            console.log("HH:MM:SS = " + now.getHours()+":"+now.getMinutes()+":"+now.getSeconds())
+        }
+        setInterval(currentTime(),1000)
+    </script>
+</body>
+</html>

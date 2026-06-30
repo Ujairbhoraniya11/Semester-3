@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let date1In = prompt("Enter First Date(YYYY-MM-DD) : ")
+
+        let date2In = prompt("Enter Second Date (YYYY-MM-DD) : ")
+        
+        let date1 = new Date(date1In)
+        let date2 = new Date(date2In)
+        
+        let totalDays = (date1.getDay() - date2.getDay()) / (360*60*60*24*1000)
+        // let week = parseInt(totalDays / 7)
+        // let workingDay = totalDays - week   
+
+        document.write("Total Days : " + totalDays + "<br>")
+        // document.write("Weekends : " + week + "<br>")
+        // document.write("WorkingDays : " + workingDay)
+
+    </script>
+</body>
+</html>

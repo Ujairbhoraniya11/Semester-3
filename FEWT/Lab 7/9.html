@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let start = parseInt(prompt("Enter Starting Number : "))
+        let end = parseInt(prompt("Enter Ending Number : "))
+        
+        let diff = Math.abs(start - end)
+
+        let randomnumber = Math.floor(Math.random() * diff)   
+        
+        randomnumber += start
+
+        document.write(randomnumber)
+    </script>
+</body>
+</html>
